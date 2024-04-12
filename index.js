@@ -4,7 +4,7 @@ const app = express()
 const Note = require('./models/note')
 const cors = require('cors')
 
-/* let notes = [
+let notes = [
     {
         id: 1,
         content: "HTML is easy",
@@ -20,7 +20,7 @@ const cors = require('cors')
         content: "GET and POST are the most important methods of HTTP protocol",
         important: true
     }
-] */
+]
 
 const requestLogger = (request, response, next) => {
     console.log('Method:', request.method)
